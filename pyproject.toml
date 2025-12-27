@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rag-unitesting"
+version = "0.1"
+description = "Creatig rag pipline using chaining and also test it using unitesting."
+authors = ["Amrendra Singh"]
+license = "Mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+numpy = "^2.4.0"
+openai = "^2.14.0"
+scikit-learn = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
