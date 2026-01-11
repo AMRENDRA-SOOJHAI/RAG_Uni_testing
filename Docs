@@ -1,0 +1,14 @@
+
+## "For running the  Clickhouse inside command_prompt"
+docker exec -it rag_unitest-clickhouse-1 clickhouse-client
+
+## 'For running the postgres inside comand prompt"
+docker exec -it rag_unitest-postgres-1 psql -U postgres -d postgres
+
+## -"Postgres_Ui"
+
+docker run -d 
+
+## 'For running the minio in the command prompt '
+docker exec -it rag_unitest-minio-1 ls /data/langfuse
+port -- [text](http://localhost:9091)

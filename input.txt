@@ -1,0 +1,20 @@
+RAG stands for Retrieval Augmented Generation.
+RAG combines information retrieval with language generation.
+RAG helps large language models use external knowledge.
+Embeddings convert text into dense numerical vectors.
+Semantic similarity is used to match related text.
+Cosine similarity measures closeness between embeddings.
+Vector databases store and search embeddings efficiently.
+Common vector databases include FAISS and Chroma.
+Retrieval selects the most relevant documents for a query.
+Context is passed to the language model during generation.
+Providing context reduces hallucinations in LLM outputs.
+Without retrieval, LLMs rely only on training data.
+RAG systems improve factual accuracy of answers.
+Chunking splits large documents into smaller pieces.
+Each chunk can be embedded separately.
+Top-k retrieval selects the best matching chunks.
+Prompt engineering controls how context is used.
+Generation produces the final natural language answer.
+RAG pipelines usually have retrieval and generation stages.
+Langfuse can be used to observe and trace RAG pipelines.

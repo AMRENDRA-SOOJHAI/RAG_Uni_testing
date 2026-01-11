@@ -1,16 +1,24 @@
+########################################################--------------------
+import os
 import numpy as np
-from openai import OpenAI
+# from openai import OpenAI
 from sklearn.metrics.pairwise import cosine_similarity
+from langfuse.openai import OpenAI
 
-client = OpenAI(api_key="your_api_key_here")
+client = OpenAI(api_key= os.getenv("OPENAI_API_KEY"))
 
 # KNOWLEDGE BASE
-DOCUMENTS = [
-    "RAG stands for Retrieval Augmented Generation.",
-    "RAG uses embeddings to find relevant documents.",
-    "LLMs generate answers using provided context."
-]
+# DOCUMENTS = [
+#     "RAG stands for Retrieval Augmented Generation.",
+#     "RAG uses embeddings to find relevant documents.",
+#     "LLMs generate answers using provided context."
+# ]
 
+def load_documents(path="input.txt"):
+    with open(path, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
+
+DOCUMENTS = load_documents("input.txt")
 
 # EMBEDDING FUNCTION
 def embed(texts):
